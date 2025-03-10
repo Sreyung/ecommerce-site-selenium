@@ -1,0 +1,13 @@
+Test Automation Framework
+    Command to run selelnium server in local
+      java -jar selenium-server-4.29.0.jar hub
+      java -jar selenium-server-4.29.0.jar node --hub http://localhost:4444
+Amazon any 5 journeys
+
+    -> Maven Based Prject
+        -- Dependency : Selenium, TestNg, commonIo, allure, JSON
+    -> Report : Allure
+    -> Run cron job faily on Jenkins or GitHub Actions
+
+
+

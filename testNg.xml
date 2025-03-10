@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Tests Suite" verbose="1">
+
+    <!-- Define a test -->
+<!--    <?xml version="1.0" encoding="UTF-8"?>-->
+<!--    <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+<!--    <suite  thread-count="5" parallel="classes" name="Suite">-->
+<!--        <test  name="Test">-->
+<!--            <classes>-->
+<!--                <class name="runner.LogOut_TC_002"/>-->
+<!--                <class name="runner.Login_TC_001"/>-->
+<!--            </classes>-->
+<!--        </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    </suite> &lt;!&ndash; Suite &ndash;&gt;-->
+
+    <!-- Alternatively, you can specify individual test classes -->
+    <test name="Smoke Tests">
+        <classes>
+            <class name="test.searchTest"/>
+            <class name="test.AddToCartTest"/>
+            <class name="test.CalculateQuantity"/>
+        </classes>
+    </test>
+
+    <!-- You can also include or exclude specific methods -->
+
+</suite>

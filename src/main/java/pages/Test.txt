@@ -1,0 +1,30 @@
+driver.manage().implicit();
+
+
+WebDriverWait wait = new WebDriverWait(driver.TIMEOUNT_IN_SECONDS, 10);
+
+wait.ExpectedCondition(ElementToBePResent(element), 10);
+
+
+{
+  "name":"Sreyung",
+  "age":25,
+  "company": "Thoughtworks"
+}
+
+
+
+
+
+
+Map<String, String> mapEntries = new HashMap<String, String>()
+
+
+mapEntries.add(name,Sreyung );
+mapEntries.add(age,25 );
+mapEntries.add(company,Thoughtworks )
+
+mapEntries.entrySet();
+[name, Sreyung],
+
+
