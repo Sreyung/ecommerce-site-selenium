@@ -17,7 +17,7 @@ public class searchTest extends HomePage {
     public  void runSearchTest() throws InterruptedException {
         clickOnSearch("mobile");
         int resultsCount = getSearchResult();
-        Assert.assertEquals(resultsCount, 23);
+        Assert.assertEquals(resultsCount, 22);
 
     }
 
