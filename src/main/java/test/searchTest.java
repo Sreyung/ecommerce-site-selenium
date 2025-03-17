@@ -6,6 +6,9 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import utils.AllureTestListener;
 
+import java.io.File;
+import java.io.IOException;
+
 @Listeners(AllureTestListener.class)
 public class searchTest extends HomePage {
 
@@ -15,6 +18,9 @@ public class searchTest extends HomePage {
         clickOnSearch("mobile");
         int resultsCount = getSearchResult();
         Assert.assertEquals(resultsCount, 23);
+
     }
+
+
 
 }

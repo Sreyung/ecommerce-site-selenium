@@ -1,5 +1,6 @@
 package utils;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.example.BasePage;
 import org.openqa.selenium.*;
@@ -12,6 +13,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.DriverManager;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +36,7 @@ public class utils extends BasePage {
         driver.switchTo().window(window);
     }
 
-    public static byte[] captureScreenshot(WebDriver driver) {
+    public  byte[] captureScreenshot(WebDriver driver) {
         if (driver instanceof TakesScreenshot) {
             return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         }
@@ -42,7 +44,7 @@ public class utils extends BasePage {
     }
 
     @Attachment(value = "{name}", type = "image/png")
-    public static byte[] attachScreenshot(byte[] screenshot, String name) {
+    public  byte[] attachScreenshot(byte[] screenshot, String name) {
         return screenshot;
     }
 
